@@ -29,7 +29,7 @@ test.describe('Other login tests - bonus', () => {
     test('Verify alert message is displayed when user enters invalid email', async ({ page }) => {
 
         await loginPage.performLogin(testData.invalid_user.email, testData.valid_user.password);
-        await loginPage.verifyInvalidCredsErrorMessage();
+        await loginPage.verifyInvalidCredsErrorMessage(); // verify error message
     });
 
     test('Verify alert is displayed when user enters invalid password', async ({ page }) => {
